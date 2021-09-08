@@ -1,0 +1,46 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+
+{% if form != None %}
+
+        <section id="PoolForm">
+            <form method="POST" class="form-horizontal">
+                {% csrf_token %}
+                <label for = "{{ form.name.id_for_label }}"> {{ form.name.label }}: </label><br>
+                    {{ form.name }}<br><br>
+                <label for = "{{ form.city.id_for_label }}"> {{ form.city.label }}: </label><br>
+                    {{ form.city }}<br><br>
+                <label for = "{{ form.gender.id_for_label }}"> {{ form.gender.label }}: </label><br>
+                    {{ form.gender }}<br><br>
+                <label for = "{{ form.job.id_for_label }}"> {{ form.job.label }}: </label><br>
+                    {{ form.job }}<br><br>
+                <label for = "{{ form.trial.id_for_label }}"> {{ form.trial.label }}: </label><br>
+                    {{ form.trial }}<br><br>
+                <label for = "{{ form.notice.id_for_label }}"> {{ form.notice.label }}: </label><br>
+                    {{ form.notice }}<br><br>
+                <label for = "{{ form.email.id_for_label }}"> {{ form.email.label }}: </label><br>
+                    {{ form.email }}<br><br>
+                <label for = "{{ form.message.id_for_label }}"> {{ form.message.label }}: </label><br>
+                    {{ form.message }}<br><br>
+                <input type="submit" value="Отправить" class="submit_btn" />
+            </form>
+        </section>
+
+{% else %}
+        <br><h2>Спасибо что заполнили анкету!</h2>
+        <h3>Следующая информация о Вас сохранена в нашей базе:</h3>
+        <ul>
+            <li><span>Имя: </span> {{ data.name }} </li>
+            <li><span>Город: </span> {{ data.city }} </li>
+            <li><span>Пол: </span> {{ data.gender }} </li>
+            <li><span>Род деятельности: </span> {{ data.job }} </li>
+            <li><span>Катание на велосипеде: </span> {{ data.trial }} </li>
+            <li><span>Рассылка E-mail: </span> {{ data.notice }} </li>
+            <li><span>Ваш E-mail: </span> {{ data.email }} </li>
+            <li><span>Коротко о себе: </span> {{ data.message }} </li>
+        </ul>
+{% endif %}
+{% endblock %}

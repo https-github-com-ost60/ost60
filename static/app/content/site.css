@@ -1,0 +1,224 @@
+body {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background: url(img/bg.jpg) no-repeat center top / cover;
+    transform-style: inherit;
+    background-attachment: fixed;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1280px;
+    /*display: initial;*/
+}
+
+header {
+    max-width: 1920px;
+    height: 100vh;
+}
+
+.navbar-nav {
+    margin-top: 20px;
+}
+
+.navbar-inverse {
+    background-color: #222222;
+    text-transform: uppercase;
+    font-weight:bold;
+
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.banner {
+    max-width: 1280px;
+    width: 75%;
+    min-width: 40%;
+    height: auto;
+    margin: 0 auto;
+    position: initial;
+    background-attachment: inherit;
+    transform-style: inherit;
+    display: inline-block;
+}
+
+    .banner img {
+        max-width: 1280px;
+        width: 75%;
+        min-width: 40%;
+        height: auto;
+        position: absolute;
+    }
+
+#banner-img {
+    margin: 0 auto;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+}
+
+#banner {
+    height: 75%;
+    margin: 0 auto;
+}
+
+
+.button {
+    position: relative;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #f7bc1d;
+    border: none;
+    color: #1c2631;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.1s;
+    cursor: pointer;
+    margin: 5px;
+    left: 45%;
+    top: 88%;
+    z-index: -1000px;
+}
+
+    .button:hover {
+        box-shadow: 0 0 10px #1c2631, 0 0 30px #f7bc1d;
+        color: #fff;
+    }
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        /*transition: 0.1s;*/
+    }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            font-size: 16px;
+            padding-bottom: 10px;
+            /*  transition: 0.1s;*/
+        }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slider__item {
+    flex: 0 0 100%;
+    max-width: 1920px;
+}
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
+}
+
+.slider__control_show {
+    display: flex;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.slider__control_left {
+    left: 0;
+}
+
+.slider__control_right {
+    right: 0;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__item > div {
+    line-height: 550px;
+    font-size: 100px;
+    text-align: center;
+}

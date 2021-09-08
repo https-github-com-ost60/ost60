@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Климат-Град</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/nicepage.css' %}" />
+    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+    <script src="{% static 'app/scripts/slider.js' %}"></script>
+    <script src="{% static 'app/scripts/index.js' %}"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="container">
+
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand"><img src="{% static 'app/content/logo.png' %}" width="300px"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+
+                <div class="menu-wrap">
+	                <ul>
+		                <li><a href="{% url 'home' %}">На главную</a></li>
+                    <li><a href="{% url 'about' %}">О нас</a></li>
+                    <li><a href="#">Категории</a>
+                        <ul>
+				            <li><a href="{% url 'air_conditioner' %}">Кондиционеры</a></li>
+				            <li><a href="{% url 'industrial_air_conditioners' %}">Промышленные кондиционеры</a></li>
+                            <li><a href="{% url 'heating_equipment' %}">Тепловое оборудование</a></li>
+                            <li><a href="{% url 'ventilation' %}">Вентилляция</a></li>
+                            <li><a href="{% url 'dehumidifiers' %}">Осушители</a></li>
+                            <li><a href="{% url 'humidifiers_purifiers' %}">Увлажнители и очистители</a></li>
+			            </ul>
+                    </li>
+                    <li><a href="{% url 'links' %}">Портфолио</a></li>
+                    <li><a href="{% url 'contact' %}">Контакты</a></li>
+                    <li><a href="{% url 'blog' %}">Блог</a></li>
+	                </ul>
+                </div>
+
+                {% include 'app/loginpartial.html' %}
+            </div>
+
+        </div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+    </div>
+
+    <div class="container body-content">
+        {% block content %}
+        {% endblock %}
+
+        <hr/>
+
+        <!--<footer>
+            <table align="center" width="90%">
+                <tr>
+                    <td width="300px" border align="left"><p>&copy; {{ year }} - Климат-Град</p></td>
+                    <td width="500px"><p align="center"CONTENT>CONTENT</p></td>
+                    <td width="300px"align="right"><p>Телефон: +7(911)382-30-86</p>
+            <p align="right">E-mail: r.ildjanov@yandex.com   </p></td>
+                </tr>
+            </table> 
+        </footer>-->
+
+        
+
+    </div>
+
+    
+{% block scripts %}
+   <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'app/scripts/respond.js' %}"></script> 
+{% endblock %}
+
+</body>
+
+<footer class="flex-rw">
+  <ul class="footer-list-top">
+    <li><img src="{% static 'app/content/logo.png' %}" width="300px"/></li>
+    
+  </ul>
+
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">О нас</h4></li>
+    <li><a href='{% url 'home' %}' class="generic-anchor footer-list-anchor" itemprop="significantLink">Главная</a></li>
+    <li><a href='{% url 'about' %}' class="generic-anchor footer-list-anchor" itemprop="significantLink">О компании</a></li>
+    <li><a href='{% url 'blog' %}' class="generic-anchor footer-list-anchor" itemprop="significantLink">Новости</a></li>
+  </ul>
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">Категории</h4></li>
+
+
+    <li><a href='{% url 'air_conditioner' %}' class="generic-anchor footer-list-anchor">Кондиционеры</a></li>
+    <li><a href='{% url 'industrial_air_conditioners' %}' class="generic-anchor footer-list-anchor">Промышленные кондиционеры</a></li>
+    <li><a href='{% url 'heating_equipment' %}' class="generic-anchor footer-list-anchor">Тепловое оборудование</a></li>
+    <li><a href='{% url 'ventilation' %}' class="generic-anchor footer-list-anchor">Вентиляция</a></li>
+    <li><a href='{% url 'dehumidifiers' %}' class="generic-anchor footer-list-anchor" target="_blank">Осушители</a></li>
+    <li><a href='{% url 'humidifiers_purifiers' %}' class="generic-anchor footer-list-anchor" target="_blank">Увлажнители и мойки воздуха</a></li>
+  </ul>
+  <ul class="footer-list-top">
+    <li id='help'>
+      <h4 class="footer-list-header">Контакты</h4></li>
+    <li><a href="{% url 'contact' %}" class="generic-anchor footer-list-anchor">Контакты</a></li>
+  </ul>
+  <ul class="footer-list-top">
+    <li><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1185543e520ec73412f17e0cdf76a7db9329bf97ab0fecf2e27990ff6c5aff44&amp;source=constructor" width="600" height="300" frameborder="0"></iframe></li>
+  </ul>
+  <!--<section class="footer-social-section flex-rw">
+      <span class="footer-social-overlap footer-social-connect">
+      CONNECT <span class="footer-social-small">with</span> US
+      </span>
+      <span class="footer-social-overlap footer-social-icons-wrapper">
+      <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+      <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+      <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+      <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+      </span>
+  </section>-->
+  <section class="footer-bottom-section flex-rw">
+    <div class="footer-bottom-wrapper">   
+    <i class="fa fa-copyright" role="copyright">
+ 
+    </i> 2021 Климат-Град <address class="footer-address" role="company address">Псков</address><span class="footer-bottom-rights"> - Все права защищены</span>
+        </div>
+        <div class="footer-bottom-wrapper">
+        <!--<a href="/terms-of-use.html" class="generic-anchor" rel="nofollow">Terms</a> | <a href="/privacy-policy.html" class="generic-anchor" rel="nofollow">Privacy</a>-->
+          </div>
+  </section>
+</footer>
+
+</html>

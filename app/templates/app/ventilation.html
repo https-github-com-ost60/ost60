@@ -1,0 +1,255 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+
+<!--<h2>{{ title }}</h2>-->
+<!--<h3>{{ message }}</h3>-->
+
+<section class="u-align-center u-clearfix u-image u-section-1" src="" id="carousel_0516">
+      <div class="u-clearfix u-sheet u-sheet-1">
+          <br/><br/>
+          <h1 class="u-custom-font u-font-raleway u-text u-text-1">Вентиляция воздуха</h1>
+      </div>
+    </section>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="styles/index.processed.css">
+
+        <title>Responsive website food</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <!--
+        <section id="video_about">
+                <video src="{% static 'app/content/video/ventilation.mp4'%}" loop="loop" autoplay></video>
+        </section>-->
+        <div class="slider">
+	        <div class="slide-track">
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/1.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/2.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/3.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/4.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/5.png'%}" height="100" width="250" alt="" />
+		        </div>
+                <div class="slide">
+			        <img src="{% static 'app/content/images/6.png'%}" height="100" width="250" alt="" />
+		        </div>
+                <div class="slide">
+			        <img src="{% static 'app/content/images/7.png'%}" height="100" width="250" alt="" />
+		        </div>
+                <div class="slide">
+			        <img src="{% static 'app/content/images/1.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/2.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/3.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/4.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/5.png'%}" height="100" width="250" alt="" />
+		        </div>
+                <div class="slide">
+			        <img src="{% static 'app/content/images/6.png'%}" height="100" width="250" alt="" />
+		        </div>
+                <div class="slide">
+			        <img src="{% static 'app/content/images/7.png'%}" height="100" width="250" alt="" />
+		        </div>
+	        </div>
+        </div>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <!--<h2 class="section-title about__initial">О выборе <br>кондиционера</h2>-->
+                        <p class="about__description">Вентиляция является очень важной системой, от которой зависит то, какая атмосфера будет иметься в помещениях, а она при этом влияет на работоспособность и самочувствие людей. Важно не только осуществить грамотный монтаж в соответствии с имеющимися параметрами, но и обеспечивать правильный уход за оборудованием.</p>
+                        <p class="about__description">Приточно-вытяжные установки применяются для организации вентиляции в жилых домах, коттеджах, кафе, ресторанах и прочих общественных помещениях с площадью до 500 кв.м.</p>
+                    </div>
+
+                    <!--<img src="{% static 'app/content/img/cond1.png'%}" alt="" class="about__img">-->
+                </div>
+            </section>
+
+        <table border="0" width="100%" cellpadding="5">
+            <tr>
+                <td style="text-align:center; font-size: 24px">Работа вентиляции</td>
+                <td style="text-align:center; font-size: 24px">Работа рекуператора</td>
+            </tr>
+            <tr>
+                    <td style="text-align:center">
+                        <section id="video_about1">
+                            <video src="{% static 'app/content/video/ventil2.mp4'%}" loop="loop" autoplay></video>
+                        </section>
+                    </td>
+                    <td style="text-align:center">
+                        <section id="video_about1">
+                            <video src="{% static 'app/content/video/ventil_2.mp4'%}" loop="loop" autoplay></video>
+                        </section>
+                    </td>
+                  </tr>
+        </table>  
+
+        <!--<section id="video_about">
+                <video src="{% static 'app/content/video/ventil2.mp4'%}" loop="loop" autoplay></video>
+        </section>-->
+
+            <!--========== SERVICES ==========-->
+            <h2 class="section-title">Как мы работаем:</h2>
+            <section class="services section bd-container" id="about">
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <img src="{% static 'app/content/img/montaj4.png' %}" alt="Инженеринг" width="150px"/>
+                        <h3 class="services__title">Инженеринг</h3>
+                        <p class="services__description">Подбор оборудования и материалов, проектирование.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="{% static 'app/content/img/montaj2.png' %}" alt="Согласование сметы" width="150px"/>
+                        <h3 class="services__title">Согласование сметы</h3>
+                        <p class="services__description">Согласование сметной стоимости, заключение договора.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="{% static 'app/content/img/montaj3.png' %}" alt="Монтаж" width="150px"/>
+                        <h3 class="services__title">Монтаж</h3>
+                        <p class="services__description">Плановая доставка оборудования и материалов на объект, квалифицированные монтажные работы.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="{% static 'app/content/img/montaj4.png' %}" alt="Сервисное обслуживание" width="150px"/>
+                        <h3 class="services__title">Сервисное обслуживание</h3>
+                        <p class="services__description">Для долговременной эксплуатации оборудования необходим регулярный сервис и своевременное продление гарантии.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== APP =======-->
+    <table border="1" width="80%" style="margin-left:10%; margin-right:10%; line-height:30px">
+            <caption style="font-size: 22px; text-align:left; margin-bottom: 15px">Стоимость монтажа венциляционных систем</caption>
+                     <tr>
+                        <td style="text-align:center; font-size: 20px">№</td>
+                        <td style="text-align:center; font-size: 20px">Наименование работ</td>
+			         <td style="text-align:center; font-size: 20px">Стоимость, руб</td>
+                    </tr>
+			
+			        <tr style="background-color: #d9ebff;">
+			         <td colspan=3>
+			          Монтаж приточных установок
+			         </td>
+			        </tr>
+
+	        <tr><td style="text-align:center">1</td>    <td style="text-align:left">Монтаж приточной установки мощностью до 300 м3/час</td><td style="text-align:left">от 13000</td></tr>
+	        <tr><td style="text-align:center">2</td>    <td style="text-align:left">Монтаж приточной установки мощностью до 700 м3/час</td><td style="text-align:left">от 15000</td></tr>
+	        <tr><td style="text-align:center">3</td>    <td style="text-align:left">Монтаж приточной установки мощностью до 1500 м3/час</td><td style="text-align:left">от 25000</td></tr>
+	        <tr><td style="text-align:center">4</td>    <td style="text-align:left">Монтаж приточной установки мощностью до 2000 м3/час</td><td style="text-align:left">от 30000</td></tr>
+	        <tr><td style="text-align:center">5</td>    <td style="text-align:left">Монтаж приточной установки мощностью до 3000 м3/час</td><td style="text-align:left">от 35000</td></tr>
+
+			        <tr style="background-color: #d9ebff;">
+				        <td colspan=3>
+					        Монтаж приточно-вытяжных установок
+				        </td>
+			        </tr>
+
+	        <tr><td style="text-align:center">6</td>    <td style="text-align:left">Монтаж приточно-вытяжной установки мощностью до 700 м3/час</td><td style="text-align:left">от 20000</td></tr>
+	        <tr><td style="text-align:center">7</td>    <td style="text-align:left">Монтаж приточно-вытяжной установки мощностью до 1500 м3/час</td><td style="text-align:left">от 34500</td></tr>
+	        <tr><td style="text-align:center">8</td>    <td style="text-align:left">Монтаж приточно-вытяжной установки мощностью до 2500 м3/час</td><td style="text-align:left">от 42000</td></tr>
+	        <tr><td style="text-align:center">9</td>    <td style="text-align:left">Монтаж приточно-вытяжной установки мощностью свыше 2500 м3/час</td><td style="text-align:left">от 52000</td></tr>
+
+			        <tr style="background-color: #d9ebff;">
+				        <td colspan=3>
+					        Монтаж вытяжных установок
+				        </td>
+			        </tr>
+	        <tr><td style="text-align:center">10</td>    <td style="text-align:left">Монтаж вытяжной установки</td><td style="text-align:left">от 1 100</td></tr>
+	        <tr><td style="text-align:center">11</td>    <td style="text-align:left">Сборка вытяжной установки</td><td style="text-align:left">от 2 200</td></tr>
+	        <tr><td style="text-align:center">12</td>    <td style="text-align:left">Монтаж и подключение вытяжного вентилятора</td><td style="text-align:left">от 1 100</td></tr>
+	        <tr><td style="text-align:center">13</td>    <td style="text-align:left">Подключение вытяжной установки</td><td style="text-align:left">от 3 500</td></tr>
+
+			        <tr style="background-color: #d9ebff;">
+				        <td colspan=3>
+					        Монтаж воздуховодов
+				        </td>
+			        </tr>
+	        <tr><td style="text-align:center">14</td>    <td style="text-align:left">Монтаж круглого воздуховода D = 100 мм (м.п.)</td><td style="text-align:left">от 150</td></tr>
+	        <tr><td style="text-align:center">15</td>    <td style="text-align:left">Монтаж круглого воздуховода D = 125 мм (м.п.)</td><td style="text-align:left">от 170</td></tr>
+	        <tr><td style="text-align:center">16</td>    <td style="text-align:left">Монтаж круглого воздуховода D = 160 мм (м.п.)</td><td style="text-align:left">от 250</td></tr>
+	        <tr><td style="text-align:center">17</td>    <td style="text-align:left">Монтаж круглого воздуховода D = 200 мм (м.п.)</td><td style="text-align:left">от 350</td></tr>
+	        <tr><td style="text-align:center">18</td>    <td style="text-align:left">Монтаж круглого воздуховода D = 250 мм (м.п.)</td><td style="text-align:left">от 450</td></tr>
+	        <tr><td style="text-align:center">19</td>    <td style="text-align:left">Монтаж круглого воздуховода D = 315 мм (м.п.)</td><td style="text-align:left">от 550</td></tr>
+	        <tr><td style="text-align:center">20</td>    <td style="text-align:left">Прокладка гибких воздуховодов (1 м.кв.)</td><td style="text-align:left">от 300</td></tr>
+	        <tr><td style="text-align:center">21</td>    <td style="text-align:left">Прокладка жестких прямоугольных воздуховодов (1 м.кв.)</td><td style="text-align:left">от 500</td></tr>
+	        <tr><td style="text-align:center">22</td>    <td style="text-align:left">Демонтаж прямоугольного воздуховода (м.п.)</td><td style="text-align:left">от 150</td></tr>
+	        <tr><td style="text-align:center">23</td>    <td style="text-align:left">Демонтаж круглого воздуховода D = 250 мм (м.п.)</td><td style="text-align:left">от 200</td></tr>
+
+			        <tr style="background-color: #d9ebff;">
+				        <td colspan=3>
+					        Монтаж вентиляторов
+				        </td>
+			        </tr>
+	        <tr><td style="text-align:center">24</td>    <td style="text-align:left">Монтаж канального вентилятора производительностью 100-500 м3/ч</td><td style="text-align:left">от 5000</td></tr>
+	        <tr><td style="text-align:center">25</td>    <td style="text-align:left">Монтаж канального вентилятора производительностью 1500-10000 м3/ч</td><td style="text-align:left">от 10000</td></tr>
+	        <tr><td style="text-align:center">26</td>    <td style="text-align:left">Монтаж канального вентилятора производительностью 10000-50000 м3/ч</td><td style="text-align:left">от 18000</td></tr>
+	        <tr><td style="text-align:center">27</td>    <td style="text-align:left">Монтаж крышного вентилятора</td><td style="text-align:left">от 5000</td></tr>
+	        <tr><td style="text-align:center">28</td>    <td style="text-align:left">Монтаж радиального вентилятора</td><td style="text-align:left">от 3000</td></tr>
+
+			        <tr style="background-color: #d9ebff;">
+				        <td colspan=3>
+					        Монтаж решеток и автоматики
+				        </td>
+			        </tr>
+	        <tr><td style="text-align:center">29</td>    <td style="text-align:left">Монтаж решетки площадью до 0,09 м2</td><td style="text-align:left">от 300</td></tr>
+	        <tr><td style="text-align:center">30</td>    <td style="text-align:left">Монтаж решетки площадью 0,09-0,36 м2</td><td style="text-align:left">от 300</td></tr>
+	        <tr><td style="text-align:center">31</td>    <td style="text-align:left">Монтаж решетки площадью 0,36-1 м2</td><td style="text-align:left">от 300</td></tr>
+	        <tr><td style="text-align:center">32</td>    <td style="text-align:left">Монтаж решетки площадью свыше 1 м2</td><td style="text-align:left">от 300</td></tr>
+	        <tr><td style="text-align:center">33</td>    <td style="text-align:left">Монтаж щита автоматики</td><td style="text-align:left">от 800</td></tr>
+	        <tr><td style="text-align:center">34</td>    <td style="text-align:left">Установка привода воздушной заслонки</td><td style="text-align:left">от 2000</td></tr>
+	        <tr><td style="text-align:center">35</td>    <td style="text-align:left">Монтаж узла обвязки</td><td style="text-align:left">от 600</td></tr>
+	        <tr><td style="text-align:center">36</td>    <td style="text-align:left">Подключение узла обвязки к теплоснабжению</td><td style="text-align:left">от 3000</td></tr>
+    </table>
+
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <h2 class="section-title contact__initial">Свяжитесь с нами</h2>
+                        <p class="contact__description">У нас Вы можете приобрести кондиционер с установкой в Пскове, позвонив по телефону в разделе - Контакты.</p>
+                    </div>
+                </div>
+                <div class="contact__button">
+                        <a href="{% url 'contact' %}" class="button">Контакты</a>
+                    </div>
+            </section>
+        </main>
+
+        {% block scripts %}
+            <script src="{% static 'app/scripts/index.js' %}"></script> 
+        {% endblock %}
+
+{% endblock %}

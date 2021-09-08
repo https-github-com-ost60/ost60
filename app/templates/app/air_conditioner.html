@@ -1,0 +1,545 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+
+<!--<h2>{{ title }}</h2>-->
+<!--<h3>{{ message }}</h3>-->
+
+<section class="u-align-center u-clearfix u-image u-section-1" src="" id="carousel_0516">
+    <h1 class="u-custom-font u-font-raleway u-text u-text-1">Кондиционирование</h1>
+      <div class="u-clearfix u-sheet u-sheet-1">
+          <br/><br/>
+          
+      </div>
+    </section>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="styles/index.processed.css">
+
+        <title>Responsive website food</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+
+            <section id="gallery">
+			            <!--<div class="title1">
+				            <h2>
+					            Категории
+				            </h2>
+				            <p>
+					            Выберите подходящую категорию
+				            </p>
+			            </div>-->
+			            <div class="works clearfix">
+				            <figure class="photo-description">
+				            <img src="../static/app/content/img/cat-2-1.png" alt="Работа">
+				            <figcaption>
+					            <!--<h3>Настенные</h3>-->
+					            <p>Сплит и мульти-сплит системы</p>
+					            <a href="{% url 'air_conditioner' %}#category-1"></a>
+				            </figcaption>
+				            </figure>
+                            <figure class="photo-description">
+				            <img src="../static/app/content/img/cat-2-2.png" alt="Работа">
+				            <figcaption>
+					            <!--<h3>Кассетные</h3>-->
+					            <p>Кассетные кондиционеры</p>
+					            <a href="{% url 'air_conditioner' %}#category-2"></a>
+				            </figcaption>
+				            </figure>
+                            <figure class="photo-description">
+				            <img src="../static/app/content/img/cat-2-3.png" alt="Работа">
+				            <figcaption>
+					            <!--<h3>Напольно-потолочные</h3>-->
+					            <p>Напольно-потолочные кондиционеры</p>
+					            <a href="{% url 'air_conditioner' %}#category-3"></a>
+				            </figcaption>
+				            </figure>
+                            </div>
+
+
+                            <div class="works clearfix">
+				            <figure class="photo-description">
+				            <img src="../static/app/content/img/cat-2-4.png" alt="Работа">
+				            <figcaption>
+					            <!--<h3>Мульти сплит-системы</h3>-->
+					            <p>Мульти сплит-системы</p>
+					            <a href="{% url 'air_conditioner' %}#category-4"></a>
+				            </figcaption>
+				            </figure>
+                            <figure class="photo-description">
+				            <img src="../static/app/content/img/cat-2-5.png" alt="Работа">
+				            <figcaption>
+					            <!--<h3>Канальные</h3>-->
+					            <p>Канальные кондиционеры</p>
+					            <a href="{% url 'air_conditioner' %}#category-5"></a>
+				            </figcaption>
+				            </figure>
+                            <figure class="photo-description">
+				            <img src="../static/app/content/img/cat-2-6.png" alt="Работа">
+				            <figcaption>
+					            <!--<h3>Монтаж</h3>-->
+					            <p>Монтаж кондиционера</p>
+					            <a href="{% url 'air_conditioner' %}#category-6"></a>
+				            </figcaption>
+				            </figure>
+                            </div>
+                </section>
+
+            <div class="slider">
+	        <div class="slide-track">
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/1.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/2.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/3.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/4.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/5.png'%}" height="100" width="250" alt="" />
+		        </div>
+                <div class="slide">
+			        <img src="{% static 'app/content/images/6.png'%}" height="100" width="250" alt="" />
+		        </div>
+                <div class="slide">
+			        <img src="{% static 'app/content/images/7.png'%}" height="100" width="250" alt="" />
+		        </div>
+                <div class="slide">
+			        <img src="{% static 'app/content/images/1.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/2.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/3.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/4.png'%}" height="100" width="250" alt="" />
+		        </div>
+		        <div class="slide">
+			        <img src="{% static 'app/content/images/5.png'%}" height="100" width="250" alt="" />
+		        </div>
+                <div class="slide">
+			        <img src="{% static 'app/content/images/6.png'%}" height="100" width="250" alt="" />
+		        </div>
+                <div class="slide">
+			        <img src="{% static 'app/content/images/7.png'%}" height="100" width="250" alt="" />
+		        </div>
+	        </div>
+        </div>
+
+            <section id="video_about">
+                <!--<video src="{% static 'app/content/video/intro_aircon.mp4'%}" loop="loop" autoplay></video>-->
+            </section>
+
+            <!--========== ABOUT ==========
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <h2 class="section-title about__initial">О выборе <br>кондиционера</h2>
+                        <p class="about__description">В нашем каталоге представлен большой выбор инверторных и не инверторных моделей от надёжных производителей, отличающиеся по мощности, набору режимов работы и по цене. Инверторные модели позволяют поддерживать заданную температуру в помещении при температуре внешнего воздуха до -10ᵒC при минимальном энергопотреблении и уровне шума.</p>
+                        <p class="about__description">Под заказ имеются кондиционеры, мощность которых позволяет регулировать микроклимат на более значительных площадях.</p>
+                        <p class="about__description">В зависимости от конкретных условий объекта и микроклимата поможем рассчитать требуемую мощность и выбрать модель, оптимально удовлетворяющую всем критериям пользователя.</p>
+                    </div>
+
+                    <img src="{% static 'app/content/img/cond1.png'%}" alt="" class="about__img">
+                </div>
+            </section>-->
+
+            <!--========== VIDEO ==========-->
+            <section id="video_about1">
+                <table border="0" width="90%" cellpadding="5">
+                    <!-- СПЛИТ-СИСТЕМЫ -->
+                  <tr>
+                    <td colspan="2"><a name="category-1"><h2 class="section-title">Настенные сплит-системы</h2></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><video src="{% static 'app/content/video/inverter_aircon.mp4'%}" loop="loop" autoplay></video></td>
+                    <td><p>Настенные сплит-системы – двухблочные кондиционеры, состоящие из внешнего и внутреннего модуля. Один блок устанавливается с уличной стороны, второй – в помещении. Между собой они соединены электрокабелем и медными трубками, по которым циркулирует хладагент.</p>
+                        <p>Благодаря конструктивным особенностям сплит-системы практически бесшумны в работе, так как самый шумный узел системы – компрессор – находится в наружном блоке, установленным с уличной стороны. Компактный по размерам внутренний блок имеет привлекательный дизайн и неплохо вписывается в интерьер жилого пространства. Его можно установить практически в любом месте комнаты, там, где будет наиболее удобно для владельцев. </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                     <td colspan="3" style="text-align:center;">
+                          <table border="1" width="80%" style="margin-left:10%; margin-right:10%; line-height:30px">
+                              <caption style="font-size: 22px; text-align:left; margin-bottom: 15px">Стоимость монтажа</caption>
+                                <tr>
+                                    <td style="text-align:center; font-size: 20px">№</td>
+                                    <td style="text-align:center; font-size: 20px">Наименование работ</td>
+				                    <td style="text-align:center; font-size: 20px">Стоимость, руб</td>
+                                </tr>
+			                    <tr style="background-color: #d9ebff;">
+				                    <td colspan=3>
+					                    Стандартный монтаж настенной сплит-системы
+				                    </td>
+			                    </tr>
+
+                                <tr>
+                                        <td style="text-align:center">1</td>
+                                        <td style="text-align:left">Стандартный монтаж настенного кондиционера 07-09 (мощность охлаждения до 3 кВт)</td>
+					                    <td style="text-align:left">от 7500</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">2</td>
+                                        <td style="text-align:left">Стандартный монтаж настенного кондиционера 12-18 (мощность охлаждения свыше 3 кВт до 4,5 кВт)</td>
+					                    <td style="text-align:left">от 8500</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">3</td>
+                                        <td style="text-align:left">Стандартный монтаж настенного кондиционера 24 (мощность охлаждения свыше 4,5 кВт до 7,0 кВт)</td>
+					                    <td style="text-align:left">от 9500</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">4</td>
+                                        <td style="text-align:left">Стандартный монтаж настенного кондиционера 28-36 (мощность охлаждения свыше 7,0 кВт до 10,0кВт)</td>
+					                    <td style="text-align:left">от 11500</td>
+                                </tr>
+
+                                <tr style="background-color: #d9ebff;">
+				                    <td colspan=3>
+					                    Дополнительная работа по монтажу фреоновой трассы (трубопроводы, теплоизоляция)
+				                    </td>
+			                    </tr>
+
+                                <tr>
+                                    <td style="text-align:center">5</td>
+                                    <td style="text-align:left">Прокладка дополнительной фреоновой трассы (трубопроводов, теплоизоляции межблочного кабеля)</td>
+					                <td style="text-align:left">от 500</td>
+                                </tr>
+                                
+                            </table>
+                     </td>
+                  </tr>
+
+                    <!-- КАССЕТНЫЕ КОНДИЦИОНЕРЫ -->
+                  <tr>
+                    <td colspan="2"><a name="category-2"><h2 class="section-title">Кассетные кондиционеры</h2></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><p>Кассетные кондиционеры предполагают установку внутреннего блока за подвесным потолком. Через нижнюю панель модуля, закрытую декоративной решеткой, выводится охлажденный воздух. Главные преимущества кассетного кондиционера – незаметность и равномерное распределение воздушного потока по 4 направлениям. Такие модели эффективны для охлаждения больших помещений.</p></td>
+                    <td><video src="{% static 'app/content/video/kasset.mp4'%}" width="500px" loop="loop" autoplay></video></td>
+                  </tr>
+
+                  <tr>
+                     <td colspan="3" style="text-align:center;">
+                          <table border="1" width="80%" style="margin-left:10%; margin-right:10%; line-height:30px">
+                              <caption style="font-size: 22px; text-align:left; margin-bottom: 15px">Стоимость монтажа</caption>
+                                <tr>
+                                    <td style="text-align:center; font-size: 20px">№</td>
+                                    <td style="text-align:center; font-size: 20px">Наименование работ</td>
+				                    <td style="text-align:center; font-size: 20px">Стоимость, руб</td>
+                                </tr>
+			                    <tr style="background-color: #d9ebff;">
+				                    <td colspan=3>
+					                    Стандартный монтаж кассетного кондиционера
+				                    </td>
+			                    </tr>
+
+                                <tr>
+                                        <td style="text-align:center">1</td>
+                                        <td style="text-align:left">Стандартный монтаж полупром. кондиционера мощностью 3,5 - 5 кВт</td>
+					                    <td style="text-align:left">от 18000</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">2</td>
+                                        <td style="text-align:left">Стандартный монтаж полупром. кондиционера мощностью 7 кВт</td>
+					                    <td style="text-align:left">от 21000</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">3</td>
+                                        <td style="text-align:left">Стандартный монтаж полупром. кондиционера мощностью 10 - 12 кВт</td>
+					                    <td style="text-align:left">от 23000</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">4</td>
+                                        <td style="text-align:left">Стандартный монтаж полупром. кондиционера мощностью 14 - 17 кВт</td>
+					                    <td style="text-align:left">от 25000</td>
+                                </tr>
+
+                                <tr style="background-color: #d9ebff;">
+				                    <td colspan=3>
+					                    Дополнительная работа по монтажу фреоновой трассы (трубопроводы, теплоизоляция)
+				                    </td>
+			                    </tr>
+
+                                <tr>
+                                    <td style="text-align:center">5</td>
+                                    <td style="text-align:left">Прокладка дополнительной фреоновой трассы (трубопроводов, теплоизоляции межблочного кабеля)</td>
+					                <td style="text-align:left">от 1500</td>
+                                </tr>
+                                
+                            </table>
+                     </td>
+                  </tr>
+                      <!-- НАПОЛЬНО-ПОТОЛОЧНЫЕ КОНДИЦИОНЕРЫ -->
+                  <tr>
+                    <td colspan="2"><a name="category-3"><h2 class="section-title">Напольно-потолочные кондиционеры</h2></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><video src="{% static 'app/content/video/napol-potol.mp4'%}" width="500px" loop="loop" autoplay></video></td>
+                    <td><p>Напольно-потолочные кондиционеры – универсальные модели климатического оборудования, которые можно устанавливать как на полу, так и на потолке. Место монтажа подбирается с учетом потребностей: если кондиционер будет использоваться преимущественно для охлаждения воздуха, лучше установить прибор на потолке, что позволит охлажденным воздушным потокам равномерно распределяться по направлению вниз, обеспечивая комфортный микроклимат.</p>
+                        <p>Если владелец предполагает использовать кондиционер для обогрева, лучшим решением станет напольная установка. Теплый воздух будет подниматься, охватывая большое пространство.</p></td>
+                  </tr>
+
+                  <tr>
+                     <td colspan="3" style="text-align:center;">
+                          <table border="1" width="80%" style="margin-left:10%; margin-right:10%; line-height:30px">
+                              <caption style="font-size: 22px; text-align:left; margin-bottom: 15px">Стоимость монтажа</caption>
+                                <tr>
+                                    <td style="text-align:center; font-size: 20px">№</td>
+                                    <td style="text-align:center; font-size: 20px">Наименование работ</td>
+				                    <td style="text-align:center; font-size: 20px">Стоимость, руб</td>
+                                </tr>
+			                    <tr style="background-color: #d9ebff;">
+				                    <td colspan=3>
+					                    Стандартный монтаж кассетного кондиционера
+				                    </td>
+			                    </tr>
+
+                                <tr>
+                                        <td style="text-align:center">1</td>
+                                        <td style="text-align:left">Стандартный монтаж полупром. кондиционера мощностью 3,5 - 5 кВт</td>
+					                    <td style="text-align:left">от 18000</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">2</td>
+                                        <td style="text-align:left">Стандартный монтаж полупром. кондиционера мощностью 7 кВт</td>
+					                    <td style="text-align:left">от 21000</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">3</td>
+                                        <td style="text-align:left">Стандартный монтаж полупром. кондиционера мощностью 10 - 12 кВт</td>
+					                    <td style="text-align:left">от 23000</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">4</td>
+                                        <td style="text-align:left">Стандартный монтаж полупром. кондиционера мощностью 14 - 17 кВт</td>
+					                    <td style="text-align:left">от 25000</td>
+                                </tr>
+
+                                <tr style="background-color: #d9ebff;">
+				                    <td colspan=3>
+					                    Дополнительная работа по монтажу фреоновой трассы (трубопроводы, теплоизоляция)
+				                    </td>
+			                    </tr>
+
+                                <tr>
+                                    <td style="text-align:center">5</td>
+                                    <td style="text-align:left">Прокладка дополнительной фреоновой трассы (трубопроводов, теплоизоляции межблочного кабеля)</td>
+					                <td style="text-align:left">от 1500</td>
+                                </tr>
+                              </table>
+                     </td>
+                  </tr>
+
+                      <!-- МУЛЬТИ СПЛИТ-СИСТЕМЫ -->
+                  <tr>
+                    <td colspan="2"><a name="category-4"><h2 class="section-title">Мульти сплит-системы</h2></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><p>Особенность такого оборудования заключается в следующем: подключить к внешнему блоку можно не один, а несколько внутренних модулей, от 2 до 4-5. Каждый внутренний блок управляется индивидуальным пультом.</p></td>
+                    <td><video src="{% static 'app/content/video/multi-split.mp4'%}" width="500px" loop="loop" autoplay></video></td>
+                  </tr>
+
+                  <tr>
+                     <td colspan="3" style="text-align:center;">
+                          <table border="1" width="80%" style="margin-left:10%; margin-right:10%; line-height:30px">
+                              <caption style="font-size: 22px; text-align:left; margin-bottom: 15px">Стоимость монтажа</caption>
+                                <tr>
+                                    <td style="text-align:center; font-size: 20px">№</td>
+                                    <td style="text-align:center; font-size: 20px">Наименование работ</td>
+				                    <td style="text-align:center; font-size: 20px">Стоимость, руб</td>
+                                </tr>
+			                    <tr style="background-color: #d9ebff;">
+				                    <td colspan=3>
+					                    Стандартный монтаж кассетного кондиционера
+				                    </td>
+			                    </tr>
+
+                                <tr>
+                                        <td style="text-align:center">1</td>
+                                        <td style="text-align:left">Стандартный монтаж мульти сплит-системы с 2-мя внутренними блоками</td>
+					                    <td style="text-align:left">от 27000</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">2</td>
+                                        <td style="text-align:left">Стандартный монтаж мульти сплит-системы с 3-мя внутренними блоками</td>
+					                    <td style="text-align:left">от 41000</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">3</td>
+                                        <td style="text-align:left">Стандартный монтаж мульти сплит-системы с 4-мя внутренними блоками</td>
+					                    <td style="text-align:left">Цена по запросу</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">4</td>
+                                        <td style="text-align:left">Стандартный монтаж мульти сплит-системы с 5-ю и более внутренними блоками</td>
+					                    <td style="text-align:left">Цена по запросу</td>
+                                </tr>
+
+                                <tr style="background-color: #d9ebff;">
+				                    <td colspan=3>
+					                    Дополнительная работа по монтажу фреоновой трассы (трубопроводы, теплоизоляция)
+				                    </td>
+			                    </tr>
+
+                                <tr>
+                                    <td style="text-align:center">5</td>
+                                    <td style="text-align:left">Прокладка дополнительной фреоновой трассы (трубопроводов, теплоизоляции межблочного кабеля)</td>
+					                <td style="text-align:left">от 1500</td>
+                                </tr>
+                              </table>
+                     </td>
+                  </tr>
+
+                    <!-- КАНАЛЬНЫЕ КОНДИЦИОНЕРЫ -->
+                  <tr>
+                    <td colspan="2"><a name="category-5"><h2 class="section-title">Канальные кондиционеры</h2></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><video src="{% static 'app/content/video/kanal.mp4'%}" width="500px" loop="loop" autoplay></video></td>
+                    <td><p>Канальные кондиционеры, как и кассетные модели, устанавливаются за подвесным потолком. Но в данном случае охлажденный воздух распределяется через систему воздуховодов, размещенных между основанием потолка и плитами перекрытия.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                     <td colspan="3" style="text-align:center;">
+                          <table border="1" width="80%" style="margin-left:10%; margin-right:10%; line-height:30px">
+                              <caption style="font-size: 22px; text-align:left; margin-bottom: 15px">Стоимость монтажа</caption>
+                                <tr>
+                                    <td style="text-align:center; font-size: 20px">№</td>
+                                    <td style="text-align:center; font-size: 20px">Наименование работ</td>
+				                    <td style="text-align:center; font-size: 20px">Стоимость, руб</td>
+                                </tr>
+			                    <tr style="background-color: #d9ebff;">
+				                    <td colspan=3>
+					                    Стандартный монтаж кассетного кондиционера
+				                    </td>
+			                    </tr>
+
+                                <tr>
+                                        <td style="text-align:center">1</td>
+                                        <td style="text-align:left">Стандартный монтаж полупром. кондиционера мощностью 3,5 - 5 кВт</td>
+					                    <td style="text-align:left">от 18000</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">2</td>
+                                        <td style="text-align:left">Стандартный монтаж полупром. кондиционера мощностью 7 кВт</td>
+					                    <td style="text-align:left">от 21000</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">3</td>
+                                        <td style="text-align:left">Стандартный монтаж полупром. кондиционера мощностью 10 - 12 кВт</td>
+					                    <td style="text-align:left">от 23000</td>
+                                </tr>
+
+                                <tr>
+                                        <td style="text-align:center">4</td>
+                                        <td style="text-align:left">Стандартный монтаж полупром. кондиционера мощностью 14 - 17 кВт</td>
+					                    <td style="text-align:left">от 25000</td>
+                                </tr>
+
+                                <tr style="background-color: #d9ebff;">
+				                    <td colspan=3>
+					                    Дополнительная работа по монтажу фреоновой трассы (трубопроводы, теплоизоляция)
+				                    </td>
+			                    </tr>
+
+                                <tr>
+                                    <td style="text-align:center">5</td>
+                                    <td style="text-align:left">Прокладка дополнительной фреоновой трассы (трубопроводов, теплоизоляции межблочного кабеля)</td>
+					                <td style="text-align:left">от 1500</td>
+                                </tr>
+                              </table>
+                     </td>
+                  </tr>
+                  
+                </table>            
+            </section>
+
+            <!--========== SERVICES ==========-->
+            <h2 class="section-title">Наши услуги</h2>
+            <section class="services section bd-container" id="about">
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <img src="{% static 'app/content/img/montaj4.png' %}" alt="Продажа" width="150px"/>
+                        <h3 class="services__title">Продажа</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="{% static 'app/content/img/montaj2.png' %}" alt="Монтаж" width="150px"/>
+                        <h3 class="services__title">Монтаж</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="{% static 'app/content/img/montaj3.png' %}" alt="Обслуживание" width="150px"/>
+                        <h3 class="services__title">Обслуживание</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <h2 class="section-title contact__initial">Свяжитесь с нами</h2>
+                        <p class="contact__description">У нас Вы можете приобрести кондиционер с установкой в Пскове, позвонив по телефону в разделе - Контакты.</p>
+                    </div>
+                </div>
+                <div class="contact__button">
+                        <a href="{% url 'contact' %}" class="button">Контакты</a>
+                    </div>
+            </section>
+        </main>
+
+        {% block scripts %}
+            <script src="{% static 'app/scripts/index.js' %}"></script> 
+        {% endblock %}
+
+{% endblock %}

@@ -1,0 +1,122 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+
+<!--<h2>{{ title }}</h2>-->
+<!--<h3>{{ message }}</h3>-->
+
+<section class="u-align-center u-clearfix u-image u-section-1" src="" id="carousel_0516">
+      <div class="u-clearfix u-sheet u-sheet-1">
+          <br/><br/>
+          <h1 class="u-custom-font u-font-raleway u-text u-text-1">Осушители воздуха</h1>
+      </div>
+    </section>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="styles/index.processed.css">
+
+        <title>Responsive website food</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Выбор, обслуживание и монтаж кондиционера.</h1>
+                        <!--<h2 class="home__subtitle">У нас Вы можете приобрести кондиционер с установкой в Пскове, позвонив по телефону в разделе - Контакты.</h2>-->
+                    </div>
+    
+                    <img src="{% static 'app/content/img/cond.png'%}" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <h2 class="section-title about__initial">О выборе <br>кондиционера</h2>
+                        <p class="about__description">В нашем каталоге представлен большой выбор инверторных и не инверторных моделей от надёжных производителей, отличающиеся по мощности, набору режимов работы и по цене. Инверторные модели позволяют поддерживать заданную температуру в помещении при температуре внешнего воздуха до -10ᵒC при минимальном энергопотреблении и уровне шума.</p>
+                        <p class="about__description">Под заказ имеются кондиционеры, мощность которых позволяет регулировать микроклимат на более значительных площадях.</p>
+                        <p class="about__description">В зависимости от конкретных условий объекта и микроклимата поможем рассчитать требуемую мощность и выбрать модель, оптимально удовлетворяющую всем критериям пользователя.</p>
+                    </div>
+
+                    <img src="{% static 'app/content/img/cond1.png'%}" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--========== SERVICES ==========-->
+            <h2 class="section-title">Our amazing services</h2>
+            <section class="services section bd-container" id="about">
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <img src="{% static 'app/content/img/montaj4.png' %}" alt="Продажа" width="150px"/>
+                        <h3 class="services__title">Продажа</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="{% static 'app/content/img/montaj2.png' %}" alt="Монтаж" width="150px"/>
+                        <h3 class="services__title">Монтаж</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="{% static 'app/content/img/montaj3.png' %}" alt="Обслуживание" width="150px"/>
+                        <h3 class="services__title">Обслуживание</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== APP =======-->
+            <section class="app section bd-container">
+                <div class="app__container bd-grid">
+                    <div class="app__data">
+                        <h2 class="section-title app__initial">Монтаж кондиционера</h2>
+                        <p class="app__description">От грамотного монтажа зависит то, насколько хорошо и долго прослужит кондиционер. Профессиональный монтаж - залог долгого срока службы и качества работы кондиционера.</p>
+                        <p class="app__description">Для точного расчета установки кондиционера в Пскове необходим выезд специалиста на объект. Выезд специалиста на замер и оценку осуществляется бесплатно.</p>
+                        <div class="app__stores">
+                        </div>
+                    </div>
+
+                    <img src="{% static 'app/content/img/1.png' %}" alt="" class="app__img">
+                </div>
+            </section>
+
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <h2 class="section-title contact__initial">Свяжитесь с нами</h2>
+                        <p class="contact__description">У нас Вы можете приобрести кондиционер с установкой в Пскове, позвонив по телефону в разделе - Контакты.</p>
+                    </div>
+                </div>
+                <div class="contact__button">
+                        <a href="{% url 'contact' %}" class="button">Контакты</a>
+                    </div>
+            </section>
+        </main>
+
+        {% block scripts %}
+            <script src="{% static 'app/scripts/index.js' %}"></script> 
+        {% endblock %}
+
+{% endblock %}
